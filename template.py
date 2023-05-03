@@ -5,7 +5,7 @@ import logging
 logging.basicConfig(level=logging.INFO,format="[%(asctime)s: %(levelname)s: %(message)ss]:%(message)s")
 
 while True:
-    project_name =input('Enter the project name')
+    project_name =input('Enter the project name -  ')
     if project_name != '':
         break
 logging.info('creating Project by name : {project_name}')
@@ -16,11 +16,11 @@ list_of_files = [
     f"src/__init__.py",
     f"src/utils.py",
     f"src/pipline/__init__.py",
-    f"src/pipline/model_injection",
-    f"src/pipline/model_transformer",
-    f"src/pipline/model_trainer",
-    f"src/pipline/training_pipline",
-    f"src/pipline/prediction_pipline"
+    f"src/pipline/model_injection.py",
+    f"src/pipline/model_transformer.py",
+    f"src/pipline/model_trainer.py",
+    f"src/pipline/training_pipline.py",
+    f"src/pipline/prediction_pipline.py",
     "requirements.txt",]
 
 for filepath in list_of_files:
